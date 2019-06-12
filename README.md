@@ -18,17 +18,17 @@ Arquivo application.yml com os acessos para gerar o token
 
 Url's:
 
-Post
+Post: <br>
 http://localhost:8080/way/venda
 
-Put
+Put: <br>
 http://localhost:8080/way/fatura
 
-Get
-http://localhost:8080/way/compras/{codigousuario}
-http://localhost:8080/way/fatura/{codigousuario}/{id}
-http://localhost:8080/way/categorias
-http://localhost:8080/way/categorias/{categoria}
+Get: <br>
+http://localhost:8080/way/compras/{codigousuario}<br>
+http://localhost:8080/way/fatura/{codigousuario}/{id}<br>
+http://localhost:8080/way/categorias<br>
+http://localhost:8080/way/categorias/{categoria}<br>
 
 
 # Show me the code
