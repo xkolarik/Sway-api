@@ -53,7 +53,6 @@ public class GastosServiceImpl implements GastosService {
 	@Override
 	public Gastos criarCompra(Gastos gastos) {
 		gastos.setId(ObjectId.get());
-		// gastos.setData(LocalDateTime.now());
 		return validaGasto(gastos);
 	}
 

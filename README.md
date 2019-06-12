@@ -13,8 +13,23 @@ Arquivo application.yml com os acessos para gerar o token
 -Lombok<br>
 -Mongo DB<br>
 -Eclipse <br>
+-SOAPUI <br>
+-Postman <br>
 
-Contato: paulo_kolarik@hotmail.com
+Url's:
+
+Post
+http://localhost:8080/way/venda
+
+Put
+http://localhost:8080/way/fatura
+
+Get
+http://localhost:8080/way/compras/{codigousuario}
+http://localhost:8080/way/fatura/{codigousuario}/{id}
+http://localhost:8080/way/categorias
+http://localhost:8080/way/categorias/{categoria}
+
 
 # Show me the code
 
@@ -65,21 +80,21 @@ Funcionalidade: Categorização automatica de gasto
   caso a descrição de um gasto seja igual a descrição de qualquer outro gasto já categorizado pelo cliente
   o mesmo deve receber esta categoria no momento da inclusão do mesmo
 ```
-# Avaliação
+### Avaliação
 
 Você será avaliado pela usabilidade, por respeitar o design e pela arquitetura da API. É esperado que você consiga explicar as decisões que tomou durante o desenvolvimento através de commits.
 
-Springboot - Java - Maven (preferêncialmente) (https://projects.spring.io/spring-boot/)
-RESTFul (https://blog.mwaysolutions.com/2014/06/05/10-best-practices-for-better-restful-api/)
-DDD (https://airbrake.io/blog/software-design/domain-driven-design)
-Microservices (https://martinfowler.com/microservices/)
-Testes unitários, teste o que achar importante (De preferência JUnit + Mockito). Mas pode usar o que você tem mais experiência, só nos explique o que ele tem de bom.
-SOAPUI para testes de carga (https://www.soapui.org/load-testing/concept.html)
-Uso de diferentes formas de armazenamento de dados (REDIS, Cassandra, Solr/Lucene)
-Uso do git
-Diferencial: Criptografia de comunicação, com troca de chaves. (http://noiseprotocol.org/)
-Diferencial: CQRS (https://martinfowler.com/bliki/CQRS.html)
-Diferencial: Docker File + Docker Compose (com dbs) para rodar seus jars.
+* Springboot - Java - Maven (preferêncialmente) ([https://projects.spring.io/spring-boot/](https://projects.spring.io/spring-boot/))
+* RESTFul ([https://blog.mwaysolutions.com/2014/06/05/10-best-practices-for-better-restful-api/](https://blog.mwaysolutions.com/2014/06/05/10-best-practices-for-better-restful-api/))
+* DDD ([https://airbrake.io/blog/software-design/domain-driven-design](https://airbrake.io/blog/software-design/domain-driven-design))
+* Microservices ([https://martinfowler.com/microservices/](https://martinfowler.com/microservices/))
+* Testes unitários, teste o que achar importante (De preferência JUnit + Mockito). Mas pode usar o que você tem mais experiência, só nos explique o que ele tem de bom.
+* SOAPUI para testes de carga ([https://www.soapui.org/load-testing/concept.html](https://www.soapui.org/load-testing/concept.html))
+* Uso de diferentes formas de armazenamento de dados (REDIS, Cassandra, Solr/Lucene)
+* Uso do git
+* Diferencial: Criptografia de comunicação, com troca de chaves. ([http://noiseprotocol.org/](http://noiseprotocol.org/))
+* Diferencial: CQRS ([https://martinfowler.com/bliki/CQRS.html](https://martinfowler.com/bliki/CQRS.html)) 
+* Diferencial: Docker File + Docker Compose (com dbs) para rodar seus jars.
 
 # Observações gerais
 

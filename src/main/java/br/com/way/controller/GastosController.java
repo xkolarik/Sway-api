@@ -30,7 +30,7 @@ public class GastosController {
 	}
 	
 	@RequestMapping(value = "/compras/{codigousuario}", produces="application/json", method = RequestMethod.GET)
-	public ResponseEntity<List<Gastos>> getListaDeGastos(@PathVariable int codigousuario, @RequestParam(value = "data", required=false) String data) {
+	public ResponseEntity<List<Gastos>> getListaDeCompras(@PathVariable int codigousuario, @RequestParam(value = "data", required=false) String data) {
 		List<Gastos> gastos = gastosService.listaDeCompras(codigousuario, data);
 		return new ResponseEntity<>(gastos, HttpStatus.OK);
 	}
