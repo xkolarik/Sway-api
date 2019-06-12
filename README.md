@@ -1,16 +1,16 @@
 # API Controle de Gastos Santander Way
 
-DOCKER -
+DOCKER -<br>
 docker-compose -f docker-compose.yml up -d
 
 URL Autenticação: http://localhost:8080/oauth/token
 Arquivo application.yml com os acessos para gerar o token
 
 -Java v1.8<br>
--Docker
+-Docker<br>
 -SpringBoot v2.1.3<br>
 -Maven <br>
--Lombok
+-Lombok<br>
 -Mongo DB<br>
 -Eclipse <br>
 
