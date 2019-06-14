@@ -29,5 +29,4 @@ public class CategoriasServiceImpl implements CategoriasService {
 		List<Categorias> categorias = categoriasRepository.findAll();
 		return categorias;
 	}
-
 }

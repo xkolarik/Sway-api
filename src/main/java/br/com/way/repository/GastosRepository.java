@@ -1,6 +1,6 @@
 package br.com.way.repository;
 
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.List;
 
 import org.bson.types.ObjectId;
@@ -19,6 +19,6 @@ public interface GastosRepository extends MongoRepository<Gastos, String> {
 	Gastos findByIdAndCodigoUsuario(ObjectId id, int codigousuario);
 	
 	@Query("{ 'codigousuario' : ?0, 'data': {$gte: ?1, $lte: ?2} }")
-	List<Gastos> findAllByCodigoUsuarioData(int codigousuario, LocalDate dataInicio, LocalDate dataFim, Sort sort);
+	List<Gastos> findAllByCodigoUsuarioData(int codigousuario, LocalDateTime dataInicio, LocalDateTime dataFim, Sort sort);
 
 }

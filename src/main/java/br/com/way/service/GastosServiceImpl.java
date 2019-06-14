@@ -1,6 +1,6 @@
 package br.com.way.service;
 
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
@@ -34,9 +34,11 @@ public class GastosServiceImpl implements GastosService {
 		if (data == null) {
 			gastos = gastosRepository.findAllByCodigoUsuario(codigousuario, new Sort(Direction.DESC, "data"));
 		} else {
-			DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-			LocalDate dataInicio = LocalDate.parse(data, formatter);
-			LocalDate dataFim = dataInicio.plusDays(1);
+			DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm");
+			
+			LocalDateTime dataInicio = LocalDateTime.parse(data, formatter);
+			LocalDateTime dataFim = dataInicio.plusDays(1);
+			
 			gastos = gastosRepository.findAllByCodigoUsuarioData(codigousuario, dataInicio, dataFim,
 					new Sort(Direction.DESC, "data"));
 		}
@@ -76,8 +78,7 @@ public class GastosServiceImpl implements GastosService {
 				gastos.setIdcategoria(idCategoria);
 			}
 		}
-		gastosRepository.save(gastos);
-		return null;
+		return gastosRepository.save(gastos);
 	}
 
 	public Categorias getCategoria(Gastos gastos) {

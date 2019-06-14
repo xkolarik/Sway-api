@@ -6,8 +6,11 @@ import java.time.LocalDateTime;
 import org.bson.types.ObjectId;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
+import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
@@ -17,6 +20,8 @@ import br.com.way.SsantanderWayApplicationTest;
 import br.com.way.controller.GastosController;
 import br.com.way.domain.Gastos;
 
+@RunWith(SpringRunner.class)
+@SpringBootTest
 public class GastosControllerTests extends SsantanderWayApplicationTest {
 
 	private MockMvc mockMvc;
