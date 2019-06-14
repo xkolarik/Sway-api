@@ -17,7 +17,8 @@ docker-compose -f docker-compose.yml up -d
 Url's:
 
 Post: <br>
-http://localhost:8080/way/venda
+http://localhost:8080/way/venda<br>
+
 {"descricao": "Compra Outback", "valor": 200, "codigousuario": 3, "data": "2019-06-12T04:37:00"}
 
 Put: <br>
