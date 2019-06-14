@@ -3,14 +3,12 @@
 DOCKER -
 docker-compose -f docker-compose.yml up -d
 
-URL Autenticação: http://localhost:8080/oauth/token
-Arquivo application.yml com os acessos para gerar o token
-
 -Java 1.8<br>
 -Docker<br>
--SpringBoot<br>
+-SpringBoot<br> versão 2.1.5 e 2.1.3
 -Maven <br>
--Lombok<br>
+-Lombok<br> Apenas para geração de getters e setters remover caso utilizar cassandra
+-Utilização banco Cassandra esta comentado não escquecer de descomentar pom para as dependencias do cassandra
 -Mongo DB<br>
 -Eclipse <br>
 -SOAPUI <br>
@@ -20,6 +18,7 @@ Url's:
 
 Post: <br>
 http://localhost:8080/way/venda
+{"descricao": "Compra Outback", "valor": 200, "codigousuario": 3, "data": "2019-06-12T04:37:00"}
 
 Put: <br>
 http://localhost:8080/way/fatura
@@ -31,6 +30,9 @@ http://localhost:8080/way/categorias<br>
 http://localhost:8080/way/categorias/{categoria}<br>
 
 Para os testes talvez seja necessário alteração dos mocks pois os id´s são random!
+
+Obs: Plus foi retirado autenticação obrigatoria para criar autenticação descomentar Classe ApplicationConfig e pom.xml a URL Autenticação: http://localhost:8080/oauth/token 
+Arquivo application.properties e ou application.yml com os acessos para gerar o token  
 
 
 # Show me the code

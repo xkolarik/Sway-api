@@ -18,7 +18,7 @@ import br.com.way.repository.GastosRepository;
 
 @Service
 public class GastosServiceImpl implements GastosService {
-
+	
 	private GastosRepository gastosRepository;
 	private CategoriasRepository categeoriasRepository;
 

@@ -18,3 +18,14 @@ public interface CategoriasRepository extends MongoRepository<Categorias, String
 	List<Categorias> findAll();
 
 }
+
+//Utilizando Cassandra
+//public interface CategoriasRepository extends CassandraRepository<Categorias, String> {
+//
+//	Categorias findByNomeCategoria(String categoria);
+//
+//	List<Categorias> findCategoriasSugeridas(String categoria);
+//	
+//	List<Categorias> findAll();
+//
+//}

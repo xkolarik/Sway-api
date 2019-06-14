@@ -8,9 +8,10 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 
 import lombok.Data;
+
+//Não usar Lombok com spring 2.1.5
 
 @Data
 @Document
@@ -34,4 +35,41 @@ public class Gastos {
 	public void setId(ObjectId _id) {
 		this._id = _id;
 	}
+	public ObjectId get_id() {
+		return _id;
+	}
+	public void set_id(ObjectId _id) {
+		this._id = _id;
+	}
+	public ObjectId getIdcategoria() {
+		return idcategoria;
+	}
+	public void setIdcategoria(ObjectId idcategoria) {
+		this.idcategoria = idcategoria;
+	}
+	public String getDescricao() {
+		return descricao;
+	}
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
+	}
+	public BigDecimal getValor() {
+		return valor;
+	}
+	public void setValor(BigDecimal valor) {
+		this.valor = valor;
+	}
+	public int getCodigousuario() {
+		return codigousuario;
+	}
+	public void setCodigousuario(int codigousuario) {
+		this.codigousuario = codigousuario;
+	}
+	public LocalDateTime getData() {
+		return data;
+	}
+	public void setData(LocalDateTime data) {
+		this.data = data;
+	}
+	
 }

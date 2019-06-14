@@ -7,9 +7,9 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
-import lombok.Data;
+//Não usar Lombok com spring 2.1.5
+//@Data
 
-@Data
 @Document
 public class Categorias {
 	
@@ -32,5 +32,13 @@ public class Categorias {
 
 	public void setId(ObjectId _id) {
 		this._id = _id;
+	}
+
+	public String getCategoria() {
+		return categoria;
+	}
+
+	public void setCategoria(String categoria) {
+		this.categoria = categoria;
 	}
 }

@@ -10,7 +10,7 @@ import br.com.way.repository.CategoriasRepository;
 
 @Service
 public class CategoriasServiceImpl implements CategoriasService {
-
+	
 	private CategoriasRepository categoriasRepository;
 
 	@Autowired

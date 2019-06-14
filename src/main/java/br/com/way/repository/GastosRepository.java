@@ -22,3 +22,17 @@ public interface GastosRepository extends MongoRepository<Gastos, String> {
 	List<Gastos> findAllByCodigoUsuarioData(int codigousuario, LocalDateTime dataInicio, LocalDateTime dataFim, Sort sort);
 
 }
+
+//Utilizando Cassandra
+//public interface GastosRepository extends CassandraRepository<Gastos, String> {
+//
+//	@Query("{ 'codigousuario': ?0 }")
+//	List<Gastos> findAllByCodigoUsuario(int codigousuario, Sort sort);
+//	
+//	@Query("{ '_id': ?0, 'codigousuario': ?1 }")
+//	Gastos findByIdAndCodigoUsuario(ObjectId id, int codigousuario);
+//	
+//	@Query("{ 'codigousuario' : ?0, 'data': {$gte: ?1, $lte: ?2} }")
+//	List<Gastos> findAllByCodigoUsuarioData(int codigousuario, LocalDateTime dataInicio, LocalDateTime dataFim, Sort sort);
+//
+//}
