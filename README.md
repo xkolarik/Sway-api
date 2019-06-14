@@ -30,6 +30,8 @@ http://localhost:8080/way/fatura/{codigousuario}/{id}<br>
 http://localhost:8080/way/categorias<br>
 http://localhost:8080/way/categorias/{categoria}<br>
 
+Para os testes talvez seja necessário alteração dos mocks pois os id´s são random!
+
 
 # Show me the code
 
